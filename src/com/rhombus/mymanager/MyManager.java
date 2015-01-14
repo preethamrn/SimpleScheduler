@@ -1,21 +1,5 @@
 package com.rhombus.mymanager;
 
-
-/**
- * TODO: 
- * BUG FIXES where it doesn't change the date at top right when copying from yesterday
- * OPT: Fix app to work for many different locals
- */
-
-/** DEBUG ***
-LinearLayout lView = (LinearLayout)findViewById(R.id.allMessages);
-TextView mText = new TextView(MyManager.this);
-mText.setText(yesterdayFileName);
-lView.addView(mText);
-***********
-Toast.makeText(MyManager.this, string, Toast.LENGTH_LONG).show();
-*/
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
