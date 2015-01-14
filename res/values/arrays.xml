@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fontSizes">
+        <item name="small">Small</item>
+        <item name="normal">Normal</item>
+        <item name="large">Large</item>
+    </string-array>
+    <string-array name="fontSizeValues">
+        <item name="small">15</item>
+        <item name="normal">20</item>
+        <item name="large">25</item>
+    </string-array>
+    
+    <string-array name="colors">
+        <item name="black">Black</item>
+        <item name="cyan">White</item>
+        <item name="red">Red</item>
+        <item name="magenta">Magenta</item>
+        <item name="green">Green</item>
+        <item name="yellow">Yellow</item>
+        <item name="blue">Blue</item>
+        <item name="cyan">Cyan</item>
+        <item name="dkgrey">Dark Grey</item>
+        <item name="ltgrey">Light Grey</item>
+        <item name="none">None</item>
+    </string-array>
+</resources>

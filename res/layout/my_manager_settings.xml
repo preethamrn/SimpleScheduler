@@ -1,0 +1,79 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+	<PreferenceCategory android:title="Settings"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" />
+	
+    <ListPreference
+        android:key="prefFontSize"
+        android:title="Font Sizes"
+        android:entries="@array/fontSizes"
+        android:entryValues="@array/fontSizeValues" />
+   
+    <PreferenceCategory
+        android:title="Colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListPreference
+            android:key="prefColors0"
+            android:title="Completed Event Color"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors" />
+        <ListPreference
+            android:key="prefColors1"
+            android:title="Color 1"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors" />
+        <ListPreference
+            android:key="prefColors2"
+            android:title="Color 2"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors" />
+        <ListPreference
+            android:key="prefColors3"
+            android:title="Color 3"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors" />
+        <ListPreference
+            android:key="prefColors4"
+            android:title="Color 4"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors" />
+        <ListPreference
+            android:key="prefColors5"
+            android:title="Color 5"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors" />
+        <ListPreference
+            android:key="prefColors6"
+            android:title="Color 6"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors" />
+        <ListPreference
+            android:key="prefColors7"
+            android:title="Color 7"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors" />
+        <ListPreference
+            android:key="prefColors8"
+            android:title="Color 8"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors" />
+        <ListPreference
+            android:key="prefColors9"
+            android:title="Color 9"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors" />    
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="Folders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListPreference
+            android:key="prefFolder"
+            android:title="Notes Folder" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="15dp" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/background"
+        android:textSize="20sp"
+        android:text="Welcome to the ugliest help screen ever."
+        android:textColor="@color/foreground" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView0"
+        android:background="@color/background"
+        android:text="You can add text to your schedule by writing something and clicking the submit button.
+        \nLong pressing on the submit button will reorganize the colors.
+        \nTapping on the notes on the left or right sides of the screen changes the note&apos;s color.
+        \nA note is considered completed if it has the 'Completed Event Color' which is the first color in the Settings Screen (Black by default)."
+        android:textColor="@color/foreground" />
+
+    <Button
+        android:id="@+id/helpPrevBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Prev" />
+
+    <Button
+        android:id="@+id/helpNextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Next" />
+
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="15dp" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/background"
+        android:textSize="20sp"
+        android:text="Welcome to the ugliest help screen ever. If you need help later, press the button below to get to the help and settings screen (This button doesn't work. The button in the main part of the app does). For now, try out the app for a while and then realize that you have no idea what it does."
+        android:textColor="@color/foreground" />
+
+    <ImageView
+        android:id="@+id/helpViewGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView0"
+        android:src="@drawable/abc_ic_go" />
+
+    <Button
+        android:id="@+id/helpNextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Next" />
+
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>

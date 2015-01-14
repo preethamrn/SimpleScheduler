@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" 
+    android:padding="15dp" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/helpViewMore"
+        android:background="@color/background"
+        android:text="The button above brings a list of all the daily schedules of the current month."
+        android:textColor="@color/foreground" />
+
+    <ImageView
+        android:id="@+id/helpViewMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/abc_ic_menu_moreoverflow_normal_holo_dark" />
+
+    <ImageView
+        android:id="@+id/helpViewGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/helpViewMore"
+        android:layout_below="@+id/textView2"
+        android:src="@drawable/abc_ic_go" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/helpViewGo"
+        android:background="@color/background"
+        android:text="The button above brings the help and settings screen where you can change the font size and the colors rotation (different colors that show when you tap a note). Changing color rotations after using the app may cause some notes to appear as colors different from what was originally intended."
+        android:textColor="@color/foreground" />
+    
+    <Button
+        android:id="@+id/helpNextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Finish" />
+    
+    <Button
+        android:id="@+id/helpPrevBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="Prev" />
+
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>

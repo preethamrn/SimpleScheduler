@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsListFooter"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:background="@color/greyed" >
+    
+    <TextView
+        android:id="@+id/addFolderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new folder"
+        android:textColor="@color/foreground"
+        android:textSize="15sp" />
+    
+    <EditText
+        android:id="@+id/inputFolderName"
+		android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/addFolderTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10" 
+        android:inputType="text" />
+
+	<ImageView
+        android:id="@+id/submitFolderName"
+		android:layout_width="45dp"
+		android:layout_height="45dp"
+        android:layout_below="@+id/addFolderTextView"
+		android:layout_alignParentRight="true"
+		android:layout_alignTop="@+id/inputFolderName"
+		android:layout_marginRight="7dp"
+		android:contentDescription="submitButton"
+		android:scaleType="fitCenter"
+		android:src="@drawable/submit" />
+
+</RelativeLayout>

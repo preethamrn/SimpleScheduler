@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:textSize="20sp"
+        android:text="App made by Preetham N.\n\nInspired by a person who would not like to be named (you know who you are)\n\n\nBugs? Suggestions? Email: rhombus.developers@gmail.com"
+        android:textColor="@color/foreground" />
+    
+</LinearLayout>

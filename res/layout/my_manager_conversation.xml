@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.rhombus.mymanager.MyManager" 
+	android:launchMode="singleTop"
+    android:id="@+id/managerPage">
+    
+    <RelativeLayout
+        android:id="@+id/psychPageBottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/greyed" >
+
+        <EditText
+            android:id="@+id/inputText"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:inputType="textCapSentences|textMultiLine|textLongMessage" />
+
+        <ImageView
+            android:id="@+id/submit"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/inputText"
+            android:layout_marginRight="7dp"
+            android:contentDescription="submitButton"
+            android:scaleType="fitCenter"
+            android:src="@drawable/submit" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/psychPageBottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/menuBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="conversationListButton"
+                    android:src="@drawable/abc_ic_menu_moreoverflow_normal_holo_dark" />
+
+                <ImageView
+                    android:id="@+id/helpBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/menuBtn"
+                    android:src="@drawable/abc_ic_go" />
+
+                <TextView
+                    android:id="@+id/dateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/menuBtn"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/background"
+                    android:gravity="right"
+                    android:text="00/00/0000 - DAY"
+                    android:textColor="@color/foreground"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/allMessages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

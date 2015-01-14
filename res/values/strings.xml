@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simple Scheduler</string>
+    <string name="action_settings">Settings</string>
+    <string name="copyMessage">Copied Text</string>
+    <color name="background">#FF000000</color>
+    <color name="foreground">#FFFFFFFF</color>
+    <color name="greyed">#BB555555</color>
+
+</resources>

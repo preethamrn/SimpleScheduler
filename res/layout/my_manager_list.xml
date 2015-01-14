@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.rhombus.mymanager.ConvoList" 
+	android:launchMode="singleTop"
+    android:id="@+id/conversationListPage">
+
+    <ScrollView
+        android:id="@+id/conversations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:fillViewport="true" >
+        
+        <LinearLayout
+            android:id="@+id/allConversations"
+            android:layout_width="match_parent"
+            android:layout_height="443dp"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
